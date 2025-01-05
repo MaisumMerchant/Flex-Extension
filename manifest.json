@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Sum Calculator Extension",
+    "version": "1.0",
+    "description": "Calculates the sum of all elements with the class 'totalColObtMarks' from the current website.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://flexstudent.nu.edu.pk/*"],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Calculate Sum"
+    }
+}

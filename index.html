@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grade Info</title>
+        <style>
+            body {
+                font-family: "Roboto", sans-serif;
+                background-color: #121212;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+
+            .result-container {
+                background-color: #1e1e1e;
+                padding: 25px 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+                width: fit-content;
+                min-width: 280px;
+                max-width: 90%;
+                text-align: center;
+                word-wrap: break-word;
+                border: 1px solid #333333;
+            }
+
+            h3 {
+                color: #ffffff;
+                margin-bottom: 20px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 12px 0;
+                line-height: 1.6;
+                color: #b0b0b0;
+                transition: transform 0.3s ease;
+            }
+
+            p:hover {
+                transform: scale(1.02);
+            }
+
+            .next-grade {
+                color: #4fc3f7;
+                font-weight: bold;
+            }
+
+            .four-gpa {
+                color: #80cbc4;
+                font-weight: bold;
+            }
+
+            @media (max-width: 480px) {
+                .result-container {
+                    padding: 20px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="result" class="result-container"></div>
+    </body>
+    <script src="script.js"></script>
+</html>
